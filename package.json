@@ -1,53 +1,54 @@
 {
-  "dependencies": {
-    "axios": "^0.18.0",
-    "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.15.2",
-    "copy": "^0.3.0",
-    "express": "^4.14.0",
-    "extend": "^3.0.0",
-    "fs-promise": "^0.5.0",
-    "passport": "^0.3.2",
-    "pg": "~7.0.0",
-    "phantom": "^2.1.21",
-    "q": "^1.4.1",
-    "querystring": "^0.2.0",
-    "request": "^2.75.0",
-    "request-promise": "^4.1.1"
-  },
-  "config": {
-    "port": 9333
-  },
-  "description": "GT4",
-  "devDependencies": {
-    "eslint": "^2.5.3",
-    "nyc": "^14.0.0",
-    "mocha": "^6.1.4"
-  },
-  "engines": {
-    "node": "8.9.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/guyrotem/google-translate-server.git"
-  },
-  "main": "scripts/server.js",
-  "name": "google-translate-api",
-  "readme": "Readme.md",
-  "scripts": {
-    "simulation": "node test/start-mock.js",
-    "lint": "eslint lib/ *.js test/ && echo Lint passed.",
-    "test": "npm run lint && npm run test-ci",
-    "test-browser": "node test/browser/start.js",
-    "test-ci": "mocha test/spec/*.js",
-    "test-cov": "nyc mocha test/spec/*.js"
-  },
-  "license": "Apache-2.0",
-  "tags": [
-    "google",
-    "translate",
-    "free api",
-    "utility"
-  ],
-  "version": "2.75.0"
+    "dependencies": {
+        "axios": "^0.18.0",
+        "bcrypt-nodejs": "0.0.3",
+        "body-parser": "^1.15.2",
+        "copy": "^0.3.0",
+        "express": "^4.14.0",
+        "extend": "^3.0.0",
+        "fs-promise": "^0.5.0",
+        "passport": "^0.3.2",
+        "pg": "~7.0.0",
+        "phantom": "^2.1.21",
+        "q": "^1.4.1",
+        "querystring": "^0.2.0",
+        "request": "^2.75.0",
+        "request-promise": "^4.1.1"
+    },
+    "config": {
+        "port": 9333
+    },
+    "description": "GT4",
+    "devDependencies": {
+        "eslint": "^2.5.3",
+        "nyc": "^14.0.0",
+        "mocha": "^6.1.4"
+    },
+    "engines": {
+        "node": "8.9.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/guyrotem/google-translate-server.git"
+    },
+    "main": "scripts/server.js",
+    "name": "google-translate-api",
+    "readme": "Readme.md",
+    "scripts": {
+        "test-start": "node server.js",
+        "simulation": "node test/start-mock.js",
+        "lint": "eslint lib/ *.js test/ && echo Lint passed.",
+        "test": "npm run lint && npm run test-ci",
+        "test-browser": "node test/browser/start.js",
+        "test-ci": "mocha test/spec/*.js",
+        "test-cov": "nyc mocha test/spec/*.js"
+    },
+    "license": "Apache-2.0",
+    "tags": [
+        "google",
+        "translate",
+        "free api",
+        "utility"
+    ],
+    "version": "2.75.0"
 }
